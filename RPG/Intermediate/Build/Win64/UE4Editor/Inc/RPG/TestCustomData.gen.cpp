@@ -13,63 +13,101 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeTestCustomData() {}
 // Cross Module References
-	RPG_API UClass* Z_Construct_UClass_ATestCustomData_NoRegister();
-	RPG_API UClass* Z_Construct_UClass_ATestCustomData();
-	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	RPG_API UScriptStruct* Z_Construct_UScriptStruct_FTestCustomData();
 	UPackage* Z_Construct_UPackage__Script_RPG();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FTableRowBase();
 // End Cross Module References
-	void ATestCustomData::StaticRegisterNativesATestCustomData()
+class UScriptStruct* FTestCustomData::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
 	{
+		extern RPG_API uint32 Get_Z_Construct_UScriptStruct_FTestCustomData_CRC();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FTestCustomData, Z_Construct_UPackage__Script_RPG(), TEXT("TestCustomData"), sizeof(FTestCustomData), Get_Z_Construct_UScriptStruct_FTestCustomData_CRC());
 	}
-	UClass* Z_Construct_UClass_ATestCustomData_NoRegister()
+	return Singleton;
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FTestCustomData(FTestCustomData::StaticStruct, TEXT("/Script/RPG"), TEXT("TestCustomData"), false, nullptr, nullptr);
+static struct FScriptStruct_RPG_StaticRegisterNativesFTestCustomData
+{
+	FScriptStruct_RPG_StaticRegisterNativesFTestCustomData()
 	{
-		return ATestCustomData::StaticClass();
+		UScriptStruct::DeferCppStructOps(FName(TEXT("TestCustomData")),new UScriptStruct::TCppStructOps<FTestCustomData>);
 	}
-	struct Z_Construct_UClass_ATestCustomData_Statics
+} ScriptStruct_RPG_StaticRegisterNativesFTestCustomData;
+	struct Z_Construct_UScriptStruct_FTestCustomData_Statics
 	{
-		static UObject* (*const DependentSingletons[])();
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
 #endif
-		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
-		static const UE4CodeGen_Private::FClassParams ClassParams;
-	};
-	UObject* (*const Z_Construct_UClass_ATestCustomData_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_AActor,
-		(UObject* (*)())Z_Construct_UPackage__Script_RPG,
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SomeName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_SomeName;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SomeNumber_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_SomeNumber;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATestCustomData_Statics::Class_MetaDataParams[] = {
-		{ "IncludePath", "TestCustomData.h" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTestCustomData_Statics::Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
 		{ "ModuleRelativePath", "TestCustomData.h" },
 	};
 #endif
-	const FCppClassTypeInfoStatic Z_Construct_UClass_ATestCustomData_Statics::StaticCppClassTypeInfo = {
-		TCppClassTypeTraits<ATestCustomData>::IsAbstract,
-	};
-	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_ATestCustomData_Statics::ClassParams = {
-		&ATestCustomData::StaticClass,
-		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
-		nullptr, 0,
-		nullptr, 0,
-		nullptr,
-		&StaticCppClassTypeInfo,
-		nullptr, 0,
-		METADATA_PARAMS(Z_Construct_UClass_ATestCustomData_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_ATestCustomData_Statics::Class_MetaDataParams))
-	};
-	UClass* Z_Construct_UClass_ATestCustomData()
+	void* Z_Construct_UScriptStruct_FTestCustomData_Statics::NewStructOps()
 	{
-		static UClass* OuterClass = nullptr;
-		if (!OuterClass)
-		{
-			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_ATestCustomData_Statics::ClassParams);
-		}
-		return OuterClass;
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FTestCustomData>();
 	}
-	IMPLEMENT_CLASS(ATestCustomData, 4097707362);
-	static FCompiledInDefer Z_CompiledInDefer_UClass_ATestCustomData(Z_Construct_UClass_ATestCustomData, &ATestCustomData::StaticClass, TEXT("/Script/RPG"), TEXT("ATestCustomData"), false, nullptr, nullptr, nullptr);
-	DEFINE_VTABLE_PTR_HELPER_CTOR(ATestCustomData);
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTestCustomData_Statics::NewProp_SomeName_MetaData[] = {
+		{ "Category", "TestCustomData" },
+		{ "ModuleRelativePath", "TestCustomData.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FTestCustomData_Statics::NewProp_SomeName = { UE4CodeGen_Private::EPropertyClass::Str, "SomeName", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FTestCustomData, SomeName), METADATA_PARAMS(Z_Construct_UScriptStruct_FTestCustomData_Statics::NewProp_SomeName_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FTestCustomData_Statics::NewProp_SomeName_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FTestCustomData_Statics::NewProp_SomeNumber_MetaData[] = {
+		{ "Category", "TestCustomData" },
+		{ "ModuleRelativePath", "TestCustomData.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FTestCustomData_Statics::NewProp_SomeNumber = { UE4CodeGen_Private::EPropertyClass::Int, "SomeNumber", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000014, 1, nullptr, STRUCT_OFFSET(FTestCustomData, SomeNumber), METADATA_PARAMS(Z_Construct_UScriptStruct_FTestCustomData_Statics::NewProp_SomeNumber_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FTestCustomData_Statics::NewProp_SomeNumber_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FTestCustomData_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FTestCustomData_Statics::NewProp_SomeName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FTestCustomData_Statics::NewProp_SomeNumber,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FTestCustomData_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_RPG,
+		Z_Construct_UScriptStruct_FTableRowBase,
+		&NewStructOps,
+		"TestCustomData",
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		sizeof(FTestCustomData),
+		alignof(FTestCustomData),
+		Z_Construct_UScriptStruct_FTestCustomData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UScriptStruct_FTestCustomData_Statics::PropPointers),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FTestCustomData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FTestCustomData_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FTestCustomData()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FTestCustomData_CRC();
+		UPackage* Outer = Z_Construct_UPackage__Script_RPG();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("TestCustomData"), sizeof(FTestCustomData), Get_Z_Construct_UScriptStruct_FTestCustomData_CRC(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FTestCustomData_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FTestCustomData_CRC() { return 4056716791U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\RPG.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{73E7EA74-FA4C-4479-8D72-2AE84C2A63FB}</UniqueIdentifier>
+			<UniqueIdentifier>{2E4B4667-EBD4-4F64-98CC-3D84AEE1352A}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\RPG.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{CA76690B-51B5-47E7-A1E6-8320B5EF3DDD}</UniqueIdentifier>
+			<UniqueIdentifier>{14AFBBC9-17CA-4EA6-8A32-A56E42654427}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -25,7 +25,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\RPG">
-			<UniqueIdentifier>{48836D7E-03E1-4393-9C1B-7C1FE1358078}</UniqueIdentifier>
+			<UniqueIdentifier>{DDBF1629-4FE7-4602-B5B7-8FD37D736A48}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\RPG\MyNewActor.cpp">
 			<Filter>Source\RPG</Filter>
