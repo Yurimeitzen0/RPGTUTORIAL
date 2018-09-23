@@ -4,15 +4,19 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "ControllableCharacter.h"
 #include "RPGCharacter.generated.h"
 
 UCLASS()
-class RPG_API ARPGCharacter : public ACharacter
+class RPG_API ARPGCharacter : public ACharacter, public IControllableCharacter
 {
 	GENERATED_BODY()
+	ARPGCharacter(const class FObjectInitializer& ObjectInitializer);
 
 public:
 	// Sets default values for this character's properties
+	virtual void MoveVertical(float Value);
+	virtual void MoveHorizontal(float Value);
 	ARPGCharacter();
 
 protected:

@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeRPGCharacter() {}
 	RPG_API UClass* Z_Construct_UClass_ARPGCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_RPG();
+	RPG_API UClass* Z_Construct_UClass_UControllableCharacter_NoRegister();
 // End Cross Module References
 	void ARPGCharacter::StaticRegisterNativesARPGCharacter()
 	{
@@ -31,6 +32,7 @@ void EmptyLinkFunctionForGeneratedCodeRPGCharacter() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -43,8 +45,12 @@ void EmptyLinkFunctionForGeneratedCodeRPGCharacter() {}
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "RPGCharacter.h" },
 		{ "ModuleRelativePath", "RPGCharacter.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ARPGCharacter_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UControllableCharacter_NoRegister, (int32)VTABLE_OFFSET(ARPGCharacter, IControllableCharacter), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ARPGCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ARPGCharacter>::IsAbstract,
 	};
@@ -56,7 +62,7 @@ void EmptyLinkFunctionForGeneratedCodeRPGCharacter() {}
 		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
-		nullptr, 0,
+		InterfaceParams, ARRAY_COUNT(InterfaceParams),
 		METADATA_PARAMS(Z_Construct_UClass_ARPGCharacter_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_ARPGCharacter_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_ARPGCharacter()
@@ -68,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeRPGCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ARPGCharacter, 1424752258);
+	IMPLEMENT_CLASS(ARPGCharacter, 724036854);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ARPGCharacter(Z_Construct_UClass_ARPGCharacter, &ARPGCharacter::StaticClass, TEXT("/Script/RPG"), TEXT("ARPGCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ARPGCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
