@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeMyNewActor() {}
 	RPG_API UClass* Z_Construct_UClass_AMyNewActor();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_RPG();
+	ENGINE_API UClass* Z_Construct_UClass_UDataTable_NoRegister();
 // End Cross Module References
 	void AMyNewActor::StaticRegisterNativesAMyNewActor()
 	{
@@ -31,6 +32,11 @@ void EmptyLinkFunctionForGeneratedCodeMyNewActor() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DataTable_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DataTable;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -44,6 +50,16 @@ void EmptyLinkFunctionForGeneratedCodeMyNewActor() {}
 		{ "ModuleRelativePath", "MyNewActor.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyNewActor_Statics::NewProp_DataTable_MetaData[] = {
+		{ "Category", "My New Actor" },
+		{ "ModuleRelativePath", "MyNewActor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyNewActor_Statics::NewProp_DataTable = { UE4CodeGen_Private::EPropertyClass::Object, "DataTable", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, STRUCT_OFFSET(AMyNewActor, DataTable), Z_Construct_UClass_UDataTable_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyNewActor_Statics::NewProp_DataTable_MetaData, ARRAY_COUNT(Z_Construct_UClass_AMyNewActor_Statics::NewProp_DataTable_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMyNewActor_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyNewActor_Statics::NewProp_DataTable,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMyNewActor_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMyNewActor>::IsAbstract,
 	};
@@ -52,7 +68,7 @@ void EmptyLinkFunctionForGeneratedCodeMyNewActor() {}
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
 		0x009000A0u,
 		nullptr, 0,
-		nullptr, 0,
+		Z_Construct_UClass_AMyNewActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_AMyNewActor_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
@@ -67,7 +83,7 @@ void EmptyLinkFunctionForGeneratedCodeMyNewActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyNewActor, 41399906);
+	IMPLEMENT_CLASS(AMyNewActor, 1444719372);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AMyNewActor(Z_Construct_UClass_AMyNewActor, &AMyNewActor::StaticClass, TEXT("/Script/RPG"), TEXT("AMyNewActor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AMyNewActor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

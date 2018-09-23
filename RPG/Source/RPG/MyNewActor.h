@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Engine/DataTable.h"
 #include "MyNewActor.generated.h"
 
 UCLASS()
@@ -12,6 +13,8 @@ class RPG_API AMyNewActor : public AActor
 	GENERATED_BODY()
 	
 public:	
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = " My New Actor")
+	UDataTable* DataTable;
 	// Sets default values for this actor's properties
 	AMyNewActor();
 

@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "MyNewActor.h"
+#include "TestCustomData.h"
 
 
 // Sets default values
@@ -17,6 +18,12 @@ void AMyNewActor::BeginPlay()
 	Super::BeginPlay();
 	
 	UE_LOG(LogTemp, Warning, TEXT("Hello, World!"));
+	if (DataTable != NULL)
+	{
+		FTestCustomData* row = DataTable->FindRow<FTestCustomData>(TEXT("2"), TEXT("LookupTestCustomData"));
+		FString someString = row->SomeName;
+		UE_LOG(LogTemp, Warning, TEXT("%s"), *someString);
+	}
 	
 }
 
