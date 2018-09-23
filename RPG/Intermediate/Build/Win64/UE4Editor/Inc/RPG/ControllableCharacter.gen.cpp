@@ -13,19 +13,19 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeControllableCharacter() {}
 // Cross Module References
-	RPG_API UClass* Z_Construct_UClass_AControllableCharacter_NoRegister();
-	RPG_API UClass* Z_Construct_UClass_AControllableCharacter();
-	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	RPG_API UClass* Z_Construct_UClass_UControllableCharacter_NoRegister();
+	RPG_API UClass* Z_Construct_UClass_UControllableCharacter();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UInterface();
 	UPackage* Z_Construct_UPackage__Script_RPG();
 // End Cross Module References
-	void AControllableCharacter::StaticRegisterNativesAControllableCharacter()
+	void UControllableCharacter::StaticRegisterNativesUControllableCharacter()
 	{
 	}
-	UClass* Z_Construct_UClass_AControllableCharacter_NoRegister()
+	UClass* Z_Construct_UClass_UControllableCharacter_NoRegister()
 	{
-		return AControllableCharacter::StaticClass();
+		return UControllableCharacter::StaticClass();
 	}
-	struct Z_Construct_UClass_AControllableCharacter_Statics
+	struct Z_Construct_UClass_UControllableCharacter_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
 #if WITH_METADATA
@@ -34,42 +34,41 @@ void EmptyLinkFunctionForGeneratedCodeControllableCharacter() {}
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
-	UObject* (*const Z_Construct_UClass_AControllableCharacter_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_AActor,
+	UObject* (*const Z_Construct_UClass_UControllableCharacter_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UInterface,
 		(UObject* (*)())Z_Construct_UPackage__Script_RPG,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AControllableCharacter_Statics::Class_MetaDataParams[] = {
-		{ "IncludePath", "ControllableCharacter.h" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UControllableCharacter_Statics::Class_MetaDataParams[] = {
 		{ "ModuleRelativePath", "ControllableCharacter.h" },
 	};
 #endif
-	const FCppClassTypeInfoStatic Z_Construct_UClass_AControllableCharacter_Statics::StaticCppClassTypeInfo = {
-		TCppClassTypeTraits<AControllableCharacter>::IsAbstract,
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UControllableCharacter_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<IControllableCharacter>::IsAbstract,
 	};
-	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AControllableCharacter_Statics::ClassParams = {
-		&AControllableCharacter::StaticClass,
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UControllableCharacter_Statics::ClassParams = {
+		&UControllableCharacter::StaticClass,
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
-		0x009000A0u,
+		0x001040A1u,
 		nullptr, 0,
 		nullptr, 0,
 		nullptr,
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
-		METADATA_PARAMS(Z_Construct_UClass_AControllableCharacter_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_AControllableCharacter_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UControllableCharacter_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UControllableCharacter_Statics::Class_MetaDataParams))
 	};
-	UClass* Z_Construct_UClass_AControllableCharacter()
+	UClass* Z_Construct_UClass_UControllableCharacter()
 	{
 		static UClass* OuterClass = nullptr;
 		if (!OuterClass)
 		{
-			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_AControllableCharacter_Statics::ClassParams);
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UControllableCharacter_Statics::ClassParams);
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AControllableCharacter, 470106903);
-	static FCompiledInDefer Z_CompiledInDefer_UClass_AControllableCharacter(Z_Construct_UClass_AControllableCharacter, &AControllableCharacter::StaticClass, TEXT("/Script/RPG"), TEXT("AControllableCharacter"), false, nullptr, nullptr, nullptr);
-	DEFINE_VTABLE_PTR_HELPER_CTOR(AControllableCharacter);
+	IMPLEMENT_CLASS(UControllableCharacter, 2291937565);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UControllableCharacter(Z_Construct_UClass_UControllableCharacter, &UControllableCharacter::StaticClass, TEXT("/Script/RPG"), TEXT("UControllableCharacter"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UControllableCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\RPG.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{2E4B4667-EBD4-4F64-98CC-3D84AEE1352A}</UniqueIdentifier>
+      <UniqueIdentifier>{2A4C1670-28CC-4FAF-87C0-EF5C9CD2E851}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\RPG.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{14AFBBC9-17CA-4EA6-8A32-A56E42654427}</UniqueIdentifier>
+      <UniqueIdentifier>{6D32F5BD-20AF-4ED6-B652-F31C8A73B111}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,8 +24,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\RPG">
-      <UniqueIdentifier>{DDBF1629-4FE7-4602-B5B7-8FD37D736A48}</UniqueIdentifier>
+      <UniqueIdentifier>{0113E0CD-8D0D-4FB9-B570-41AA69BCD227}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\RPG\ControllableCharacter.cpp">
+      <Filter>Source\RPG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPG\ControllableCharacter.h">
+      <Filter>Source\RPG</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\RPG\MyNewActor.cpp">
       <Filter>Source\RPG</Filter>
     </ClCompile>
@@ -47,6 +53,12 @@
     <ClInclude Include="..\..\Source\RPG\RPGGameModeBase.h">
       <Filter>Source\RPG</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\RPG\RPGPlayerController.cpp">
+      <Filter>Source\RPG</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RPG\RPGPlayerController.h">
+      <Filter>Source\RPG</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\RPG\TestCustomData.cpp">
       <Filter>Source\RPG</Filter>
     </ClCompile>
@@ -55,12 +67,12 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\RPG\ControllableCharacter.h">
+    <ClInclude Include="..\..\Source\RPG\RPGCharacter.h">
       <Filter>Source\RPG</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\RPG\ControllableCharacter.cpp">
+    <ClCompile Include="..\..\Source\RPG\RPGCharacter.cpp">
       <Filter>Source\RPG</Filter>
     </ClCompile>
   </ItemGroup>
