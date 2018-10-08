@@ -34,7 +34,7 @@ ARPGCharacter::ARPGCharacter(const class FObjectInitializer& ObjectInitializer) 
 	bUseControllerRotationYaw = false;
 	auto charactermov = GetCharacterMovement();
 	charactermov->bOrientRotationToMovement = true;
-	charactermov->RotationRate = FRotator(0.0f, 0.0f, 540.0f);
+	charactermov->RotationRate = FRotator(0.0f, 460.0f, 0.0f);
 	charactermov->MaxWalkSpeed = 400.0f;
 
 
