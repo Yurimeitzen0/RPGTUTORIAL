@@ -17,7 +17,7 @@ void ARPGPlayerController::MoveHorizontal(float Value)
 	IControllableCharacter* pawn = Cast<IControllableCharacter>(GetPawn());
 	if (pawn != NULL)
 	{
-		pawn->MoveVertical(Value);
+		pawn->MoveHorizontal(Value);
 	}
 }
 

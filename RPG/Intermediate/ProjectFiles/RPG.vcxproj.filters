@@ -70,9 +70,15 @@
     <ClInclude Include="..\..\Source\RPG\RPGCharacter.h">
       <Filter>Source\RPG</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\RPG\RPGGameMode.h">
+      <Filter>Source\RPG</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\RPG\RPGCharacter.cpp">
+      <Filter>Source\RPG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RPG\RPGGameMode.cpp">
       <Filter>Source\RPG</Filter>
     </ClCompile>
   </ItemGroup>

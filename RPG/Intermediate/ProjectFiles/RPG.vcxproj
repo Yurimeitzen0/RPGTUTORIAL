@@ -424,8 +424,10 @@
     <ClCompile Include="..\..\Source\RPG\RPG.cpp" />
     <ClInclude Include="..\..\Source\RPG\RPG.h" />
     <ClCompile Include="..\..\Source\RPG\RPGCharacter.cpp" />
+    <ClCompile Include="..\..\Source\RPG\RPGGameMode.cpp" />
     <ClCompile Include="..\..\Source\RPG\RPGGameModeBase.cpp" />
     <ClInclude Include="..\..\Source\RPG\RPGCharacter.h" />
+    <ClInclude Include="..\..\Source\RPG\RPGGameMode.h" />
     <ClInclude Include="..\..\Source\RPG\RPGGameModeBase.h" />
     <ClCompile Include="..\..\Source\RPG\RPGPlayerController.cpp" />
     <ClInclude Include="..\..\Source\RPG\RPGPlayerController.h" />
