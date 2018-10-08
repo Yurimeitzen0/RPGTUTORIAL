@@ -420,6 +420,8 @@
 		<None Include="..\..\Config\DefaultInput.ini" />
 		<ClCompile Include="..\..\Source\RPG\ControllableCharacter.cpp" />
 		<ClInclude Include="..\..\Source\RPG\ControllableCharacter.h" />
+		<ClCompile Include="..\..\Source\RPG\FCharacterClassInfo.cpp" />
+		<ClInclude Include="..\..\Source\RPG\FCharacterClassInfo.h" />
 		<ClCompile Include="..\..\Source\RPG\MyNewActor.cpp" />
 		<ClInclude Include="..\..\Source\RPG\MyNewActor.h" />
 		<None Include="..\..\Source\RPG\RPG.Build.cs" />

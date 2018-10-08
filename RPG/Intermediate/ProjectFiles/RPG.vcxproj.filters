@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\RPG.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{998C8DC2-CFCA-4B3A-A3FB-1468803C8174}</UniqueIdentifier>
+			<UniqueIdentifier>{1B59802F-351B-416C-97B0-739C5095F3D4}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\RPG.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{71B21411-C97B-406E-A9F0-A7AD3B3508D1}</UniqueIdentifier>
+			<UniqueIdentifier>{FC40D86C-2E9A-4292-8545-E81D358C4BB7}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,12 +28,18 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\RPG">
-			<UniqueIdentifier>{E5FB2B01-EFB6-4BAA-9848-B64A7876F0F5}</UniqueIdentifier>
+			<UniqueIdentifier>{6D590A02-FEAB-461D-B2F3-122BF50D1F70}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\RPG\ControllableCharacter.cpp">
 			<Filter>Source\RPG</Filter>
 		</ClCompile >
 		<ClInclude Include="..\..\Source\RPG\ControllableCharacter.h">
+			<Filter>Source\RPG</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\RPG\FCharacterClassInfo.cpp">
+			<Filter>Source\RPG</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\RPG\FCharacterClassInfo.h">
 			<Filter>Source\RPG</Filter>
 		</ClInclude >
 		<ClCompile Include="..\..\Source\RPG\MyNewActor.cpp">
