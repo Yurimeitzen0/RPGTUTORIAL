@@ -29,10 +29,10 @@ struct FCharacterClassInfo: public FTableRowBase
 	int32 StartLCK;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "ClassInfo")
-		int32 EndMHP;
+	int32 EndMHP;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "ClassInfo")
-		int32 EndMMP;
+	int32 EndMMP;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "ClassInfo")
 	int32 EndATK;
