@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeRPG_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/RPG",
 				PKG_CompiledIn | 0x00000000,
-				0x180A2A82,
-				0x191541FB,
+				0x0D667A64,
+				0xD0F20B17,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};

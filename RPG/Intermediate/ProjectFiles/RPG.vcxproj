@@ -437,6 +437,8 @@
 		<ClInclude Include="..\..\Source\RPG\RPGCameraComponent.h" />
 		<ClCompile Include="..\..\Source\RPG\RPGCharacter.cpp" />
 		<ClInclude Include="..\..\Source\RPG\RPGCharacter.h" />
+		<ClCompile Include="..\..\Source\RPG\RPGGameInstance.cpp" />
+		<ClInclude Include="..\..\Source\RPG\RPGGameInstance.h" />
 		<ClCompile Include="..\..\Source\RPG\RPGGameMode.cpp" />
 		<ClInclude Include="..\..\Source\RPG\RPGGameMode.h" />
 		<ClCompile Include="..\..\Source\RPG\RPGGameModeBase.cpp" />
