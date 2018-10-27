@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\RPG.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{86AC3352-95DB-4E6C-A8F2-9EE51D33D0EF}</UniqueIdentifier>
+			<UniqueIdentifier>{4CE04CAA-4CCE-4F81-B237-3A5A281B0EDB}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\RPG.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{C039390C-D5A5-4613-B01C-74816521D7B1}</UniqueIdentifier>
+			<UniqueIdentifier>{C6B04AF8-0BF8-4C36-8341-F28ADB22676D}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,8 +28,14 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\RPG">
-			<UniqueIdentifier>{323DA2E2-E1F5-4D3A-823C-DA2C743B9184}</UniqueIdentifier>
+			<UniqueIdentifier>{D394EFFA-4492-4E56-BBC6-04FC49EBB152}</UniqueIdentifier>
 		</Filter>
+		<ClCompile Include="..\..\Source\RPG\CombatEngine.cpp">
+			<Filter>Source\RPG</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\RPG\CombatEngine.h">
+			<Filter>Source\RPG</Filter>
+		</ClInclude >
 		<ClCompile Include="..\..\Source\RPG\ControllableCharacter.cpp">
 			<Filter>Source\RPG</Filter>
 		</ClCompile >

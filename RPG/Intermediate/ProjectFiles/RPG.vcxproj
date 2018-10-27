@@ -418,6 +418,8 @@
 		<None Include="..\..\Config\DefaultEngine.ini" />
 		<None Include="..\..\Config\DefaultGame.ini" />
 		<None Include="..\..\Config\DefaultInput.ini" />
+		<ClCompile Include="..\..\Source\RPG\CombatEngine.cpp" />
+		<ClInclude Include="..\..\Source\RPG\CombatEngine.h" />
 		<ClCompile Include="..\..\Source\RPG\ControllableCharacter.cpp" />
 		<ClInclude Include="..\..\Source\RPG\ControllableCharacter.h" />
 		<ClCompile Include="..\..\Source\RPG\FCharacterClassInfo.cpp" />
